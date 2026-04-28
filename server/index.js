@@ -29,7 +29,7 @@ app.post("/api/transcreate", upload.single("image"), async (req, res) => {
 
     // Step 1: GPT-4V analyzes the image and generates a transcreation prompt
     const analysisResponse = await openai.chat.completions.create({
-      model: "gpt-4-vision-preview",
+      model: "gpt-4o",
       max_tokens: 1500,
       messages: [
         {
