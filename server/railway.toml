@@ -1,0 +1,9 @@
+# For Railway deployment
+# Set these environment variables in your dashboard:
+# OPENAI_API_KEY = your-openai-api-key
+
+[build]
+  command = "npm install"
+
+[deploy]
+  startCommand = "npm start"
